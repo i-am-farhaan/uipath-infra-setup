@@ -31,7 +31,6 @@ variable "sql_server_name" {
   description = "Name of the SQL Server"
   type        = string
 }
-
 variable "sql_database_name" {
   description = "Name of the SQL Database"
   type        = string
@@ -50,5 +49,19 @@ variable "sql_admin_password" {
 
 variable "environment" {
   description = "Environment name (dev/staging/prod)"
+  type        = string
+}
+
+variable "storage_account_name" {
+  description = "Name of the Azure Storage Account"
+  type        = string
+}
+
+variable "storage_container_name" {
+  description = "Name of the blob container"
+  type        = string
+}
+variable "environment" {
+  description = "Environment (dev/staging/prod)"
   type        = string
 }
